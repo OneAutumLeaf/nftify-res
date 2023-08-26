@@ -18,8 +18,9 @@ function Home2(props) {
 
   return (
     <main className="main-container">
-      <div className="main-title">
-        <h3>Pair Search Results</h3>
+      <div style={{background:"#ffffff5e",padding:"10px"}}>
+        <h3 style={{display:"inline"}} >Pair Search Results</h3>
+        <p style={{ display: "inline",marginLeft:"1vw",wordBreak:"break-all" }}>( Please Enter Token Address in the search bar ) <br /><br />or you can use default token address - 0x2170Ed0880ac9A755fd29B2688956BD959F933F8,0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c <br /><br /> defaul pair address - 0x7213a321F1855CF1779f42c0CD85d3D95291D34C,0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae</p>
       </div>
       {filterData.length > 0 &&
         filterData.map((e, index) => {
