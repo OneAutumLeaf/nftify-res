@@ -11,7 +11,7 @@ function Header({ OpenSidebar,setDataSets,setRemResp }) {
     if (e.key == "Enter") {
       
       // await axios.get("").then((res) => {
-      // console.log(window.location.href)S
+      console.log(window.location.href)
 
       if (window.location.href == "https://nftify-ayush.netlify.app/") {
         try{
@@ -26,6 +26,7 @@ function Header({ OpenSidebar,setDataSets,setRemResp }) {
             searchRef.current.value = "";
           })
         }catch(err){
+          alert('Please enter something valid.')
           console.log(err)
         }
         // console.log("Token Address: ");
