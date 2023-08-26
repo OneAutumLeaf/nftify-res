@@ -13,7 +13,7 @@ function Header({ OpenSidebar,setDataSets,setRemResp }) {
       // await axios.get("").then((res) => {
       // console.log(window.location.href)S
 
-      if (window.location.href == "http://localhost:3000/") {
+      if (window.location.href == "https://nftify-ayush.netlify.app/") {
         try{
           await axios.get(`https://api.dexscreener.com/latest/dex/tokens/${searchRef.current.value}`).then((res) => {
             if(res.data.pairs && res.data.pairs.length>0){
@@ -29,7 +29,7 @@ function Header({ OpenSidebar,setDataSets,setRemResp }) {
           console.log(err)
         }
         // console.log("Token Address: ");
-      } else if (window.location.href == "http://localhost:3000/pair") {
+      } else if (window.location.href == "https://nftify-ayush.netlify.app/pair") {
         // console.log("Pair Address: ");
         try{
           await axios.get(`https://api.dexscreener.com/latest/dex/pairs/bsc/${searchRef.current.value}`).then((res) => {
